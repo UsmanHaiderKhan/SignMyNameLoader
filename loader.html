@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .main-loader-wrapper {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        background-color: beige;
+      }
+      .main-loader {
+        margin-top: 18px;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        padding: 0px;
+        border-radius: 100%;
+        border: 6px solid;
+        border-top-color: hsl(45, 100%, 63%);
+        border-bottom-color: rgba(255, 255, 255, 0.3);
+        border-left-color: hsl(45, 100%, 63%);
+        border-right-color: rgba(255, 255, 255, 0.3);
+        -webkit-animation: main-loader 1s ease-in-out infinite;
+        animation: main-loader 1s ease-in-out infinite;
+      }
+      @keyframes main-loader {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes main-loader {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      .loader-text {
+        text-align: center;
+        font-weight: 800;
+        font-size: 32px;
+      }
+    </style>
+    <title>Loader!</title>
+  </head>
+  <body>
+    <div class="main-loader-wrapper text-center">
+      <h2 class="loader-text">SignMyName.</h2>
+      <div class="main-loader" id="div"></div>
+    </div>
+    <div class="mt-5 container">
+      <div class="row justify-content-center">
+        <h2 class="text-center">Main Heading</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+          odit minus sed earum ea sapiente saepe illum repudiandae porro
+          explicabo. Dolorem at cupiditate similique labore, distinctio rem in
+          tempore nulla. Magnam officiis dignissimos nobis, delectus et odio
+          repellat eos iure qui assumenda eligendi. Adipisci dolorem culpa
+          blanditiis repellat cupiditate impedit, exercitationem, saepe quod
+          minima soluta laudantium repellendus autem, sunt ratione. Veritatis
+          magni eius fuga illum obcaecati vel ab fugit exercitationem incidunt
+          beatae rem natus quae architecto iure nam, quaerat cupiditate
+          doloribus placeat voluptas a repudiandae ratione quo! Et, nulla aut?
+          Ea nemo quos molestias aliquid dolore impedit alias ipsam atque,
+          reiciendis nobis adipisci excepturi, odio cumque doloribus modi
+          commodi quod est dignissimos dolores maxime dolorem, enim distinctio
+          voluptatum porro? Libero. Neque, fugiat! Sequi dolorum in incidunt!
+          Ipsam aliquam commodi mollitia, earum veniam eligendi quod. Possimus
+          vel et quia laborum expedita ex, odio dolore! Corrupti magnam
+          blanditiis optio veniam, natus laborum. Aperiam odit expedita nisi,
+          similique iure magni animi nesciunt doloremque veniam assumenda
+          laudantium facilis quae soluta provident repudiandae enim? Esse
+          explicabo natus culpa ut labore repellendus voluptate molestiae
+          reiciendis a. Odit porro fugit nostrum dolor neque sunt officiis
+          molestiae aliquid excepturi non. Quos ad sequi odit iure, molestiae
+          excepturi et quas vero voluptate quae sit placeat assumenda, magnam
+          laboriosam incidunt! Possimus voluptas accusantium ratione laborum
+          obcaecati, illo aut adipisci modi nam delectus, temporibus soluta
+          commodi excepturi cumque quasi saepe! Provident inventore quibusdam a
+          commodi ipsum, non sapiente deserunt quisquam qui.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('.main-loader-wrapper').fadeOut(2000);
+      });
+    </script>
+  </body>
+</html>
